@@ -7,8 +7,30 @@ body{
     letter-spacing: -0.02em;
     color: #6b6b6b;
 }
+h2{
+  font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: lowercase;
+    text-align: center;
+    color: #566e51;
+    margin-bottom: 8px;
+}
+h3{
+  font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.2;
+    text-align: center;
+    color: #373737;
+    margin-bottom: 16px;
+}
 @media only screen and (min-width: 1440px) {
  body{
   font-size: 16px;
  } 
+ h3{
+  font-size: 52px;
+ }
 }
