@@ -1,0 +1,38 @@
+.home-section{
+    background-image: url("/img/home/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 812px;
+}
+.home-wrapper{
+    margin-top: 475px;
+}
+.home-title{
+font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #373737;
+}
+.home-text{
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+@media only screen and (min-width: 1440px) {
+ .home-section{
+    background-image: url("/img/home/desk.png");
+}
+.home-wrapper{
+width: 580px;
+margin-top: 220px;
+}
+.home-title{
+font-size: 62px;
+}
+.home-text{
+    width: 481px;
+    margin-bottom: 40px;
+}   
+}
