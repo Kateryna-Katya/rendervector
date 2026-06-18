@@ -54,9 +54,11 @@ color: #3d6dff;
 }
 
 .text {
-    margin-top: 24px;
+    margin-top: 16px;
 }
-
+.policy-number{
+    padding-left: 20px;
+}
 
 
 .policy-span {
