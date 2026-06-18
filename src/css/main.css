@@ -99,3 +99,83 @@ margin-left: auto;
 margin-right: auto;
 }   
 }
+/* [How to Play] */
+.how-section{
+    background-image: url("/img/decor/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.how-section h3{
+    margin-bottom: 32px;
+}
+.how-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.how-item{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 1px solid #373737;
+        border-radius: 8px;
+        padding: 32px;
+        width: 343px;
+        height: auto;
+box-shadow: 4px 4px 0 0 #373737;
+    background: #9bd3d0;
+}
+.how-number-conrtainer{
+border: 1px solid #566e51;
+    border-radius: 8px;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+font-family: "Press Start 2P", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.28;
+    text-align: center;
+    color: #373737;
+    margin-bottom: 24px;
+}
+.how-item-title{
+font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #373737;
+    margin-bottom: 8px;
+}
+.h2{
+background: #feccb5;
+}
+.h3{
+background: #fec447;
+}
+@media only screen and (min-width: 1440px) {
+.how-section{
+    background-image: url("/img/decor/desk.png");
+}
+.how-section h3{
+    margin-bottom: 48px;
+}
+.how-list{
+flex-direction: row;
+gap: 32px;
+justify-content: center;
+}
+.how-item{
+width: 236px;
+    height: 262px;
+}
+.how-item-title{
+font-size: 24px;
+}    
+}
