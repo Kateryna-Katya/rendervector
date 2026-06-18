@@ -262,3 +262,45 @@ font-size: 32px;
 font-size: 18px;
 }    
 }
+/* [Development Process] */
+.development-section h3{
+    margin-bottom: 32px;
+}
+.development-wrapper{
+border-radius: 8px;
+    padding: 32px 24px;
+    width: 343px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/img/development/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.development-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.development-item{
+    font-weight: 500;
+    font-size: 16px;
+    color: #566e51;
+}
+@media only screen and (min-width: 1440px) {
+.development-section h3{
+    margin-bottom: 48px;
+}
+.development-wrapper{
+    border-radius: 8px;
+    padding: 118px 24px 118px 672px;
+    width: 1088px;
+    height: 426px;
+    background-image: url("/img/development/desk.png");
+}
+.development-item{
+font-size: 18px;
+}    
+}
