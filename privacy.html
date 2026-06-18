@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/rendervector/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <title>Studio Tycoon: Game Dev Empire</title>
+  <script type="module" crossorigin src="/rendervector/assets/main-SlpBwsMg.js"></script>
+  <link rel="stylesheet" crossorigin href="/rendervector/assets/privacy-92CpLdZc.css">
+</head>
+  <body>
+    <header class="header" id="site-header">
+    <div class="header-container container">
+        <a class="header-logo" href="./#home">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAoCAYAAAC4h3lxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABQxJREFUeAHNWc1O41YUPna6KGITdVjMAqhnyyQ0SPyJzZgnmPAEhCcY+gQJT0C66y6ZZVeEJxhngQRsJoUEsUCqK4FUIaRGKohIJHG/Y5zo+vraTiZhwidFzj2+P9+5P+fnWqMIrK+vm47jfMRfE78MframaZvHx8c2vQAwXqHb7X7yipau6xWM9TmqjRbSkQHiJXom7gPkhdPT0z0aM0zTTD4+Pv6reMWTVghTRJcFHvkvpCDf65BeCBi3qRAzn/La2tquqk1AASxhnhsp6lre7Ecu6bfCsqwmtswSxqiEVNlfWVnJyELfFvL2/JdAJU3Lxe3FccLbBQf0fO5EWCcnJ5uiwLcCmP1tRX+735M8g43E1NQUE7VFOZTK8FkRZT4FMNOyxjY0/o0mAN5SeBRFGfgl7+/vfRzlMyArUKQJAqsQWHmck5995agOsKVqNEF4q2BLYkMsRCrwSmCLBWwjn6n9gYZEJpMxOu32Pjpii5XkDh2iSiKR2KvVavYgfSy+f78LJtuOt2VhCmvYG8Wzs7NYYyH7ClkBm9Q+oEc+0+102Mwm0VGvQ7YKOchNvN5kJVKplAnFPmIPuhZDSySsHrnFVKqIlp98pFiRbreMd+/O6vUCDQFZAcPX8TO5PkDyQJYJdXllSiBR7SJ+AqmypuvuGXI6ndxiOl1Apc8yeUmRfDqdrp2fn1fCOMUp4ANOfJ8sOs4ySYqGCRLNeqOxJMmraJ/Ds0RxcBxWMMwbu6ZULPcP8cbGRoYi+3V+oQEABSyVHLNapsGQiXlviIW+AjCZgYYgbdPrQ1YsuAqwewbZvFxzenr6T6FYpQGAJY7yHRbFwGGLJJYdR25jLC8vm72CzoET4nC2LIY8mOdIXNTrdYtiVoQHx1YJV1TTYsMSDp3FMs6hyhsfrK6uuiuhe+GzavsE4u+nTmczVAnI2+32FkWArQuULIS953eNRsNHGIGdRdLKeQe5xDsnMTs7W1GQ57j/D1l+d3fX/OnNm8MEOnA0jR3QW/RmY+Di/cPDztXV1T8Ug9vb2+rMzMzfTALtmUgL7Y85ZMcqKx3Z3NwcryrPeFJQ4senp6fLMDOqhcjp8vLSxmOHRsDFxUUZjzKNAXyILVkI7fLiQZk0vCTLkOU4C1UdISvv24DlQGyTp1cAGJkcBSOEppcl2jpbGlX2Q651NZM0YcDIfFCI+1mi6wdU2Q8D2c8HmjBUWaJ4saALFQ/lxmIsNEH4OMiOra/AOG7bFhYWIuMYhNtJzidoBMie3peRycnCMLEQk0vo+lfOBcLqIBz/Cme3TSNA5ijfSjTpG4FEpokOirqmlVSz7CYy3S5BgWGvaCI5RSY0wwKhwq+I+wmJzV/pVIrDhpqGHAKJTRbkmx3H2fIc4TCIVGDsST0rgZUwOTbiBKgLGTK0wn8PD0vwwCPfcsgJTWRGFpY+xsGLSAcKvweAbIXCb+bkAwJvbNAE4TnSgB8QC3GHOEsTRKvVCowvW0b5DMihtRl2L//S8G6o47LEwAocKvra/95KCNfrhijnbE3MEhmBuB9kw77ORH7qGQf4AwbG4GuVrGxtGJC9kyMGXVGJkxVb0b/7qQezM5InjQLnuhwmq8hzlqgKdwIKcCX+Eikn1z0gvDXoBeBZHEOWs2XEbyvsw2JCJby+vm7e3Nwczs/PWyDMq8Lit/T86XOP39OYYdt2C7kv/zW5yFEnfr/j0O4cHR2FOsD/AU0mdygcyG7XAAAAAElFTkSuQmCC" alt="logo" loading="lazy" />
+        </a>
+        <button type="button" class="menu-button" aria-label="menu toggle">
+            <span class="icon">
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 30V26.6667H35V30H5ZM5 21.6667V18.3333H35V21.6667H5ZM5 13.3333V10H35V13.3333H5Z" fill="#373737" />
+</svg>
+            </span>
+        </button>
+
+        <nav class="nav ">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="links" href="./#about">About the Game</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#how">How to Play</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#features">Features</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#development">Development Process</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#advantages">Advantages</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#benefits">Player Benefits</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#faq">FAQ</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+    <ul class="menu-list">
+        <li class="menu-item"><a class="menu-list-item" href="./#about">About the Game</a></li>
+        <li class="menu-item"><a class="menu-list-item" href="./#how">How to Play</a></li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#features">Features</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#development">Development Process</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#advantages">Advantages</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#benefits">Player Benefits</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#faq">FAQ</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#contact">Contact</a>
+        </li>
+    </ul>
+</div>
+
+<main class="background">
+  <div class="container policy-container">
+    <h2 class="privacy-title" data-text="Privacy Policy">Privacy Policy</h2>
+    <p>This Privacy Policy governs your use of rendervector.space ("Website") and/or mobile applications. By using or accessing
+    Website and/or mobile applications you agree to the terms of this Privacy Policy and expressly consent to Studio Tycoon:
+    Game Dev Empire collecting, using and disclosing the information specified herein for the uses set out herein. As used
+    herein, “personal information” or “personally identifiable information” means information about an identifiable
+    individual. Studio Tycoon: Game Dev Empire does not merge, nor facilitate the merger, of your personally identifiable
+    information with non-personally identifiable information.
+  </p>
+  <p class="text">YOU MAY WITHDRAW YOUR CONSENT AT ANY TIME BY CONTACTING Studio Tycoon: Game Dev Empire THROUGH ITS WEBSITE OR AT THE
+  ADDRESS BELOW.</p>
+    <h3 class="policy-subtitle">1. ACCOUNTABILITY</h3>
+<p>The principles of Privacy are from the Personal Information Protection and Electronic Documents Act, Canada (PIPEDA).
+The Office of the Privacy Commissioner of Canada (the “OPCC”) is responsible for administering PIPEDA and ensuring
+compliance. The OPCC can be contacted at <a href="http://www.priv.gc.ca/index_e.cfm">http://www.priv.gc.ca/index_e.cfm</a>
+<br/><br/>If you have any questions about Website's Policy, please contact us through our website, if there are still any
+unanswered questions or concerns, please contact <a class="underline" href="mailto:privacy@rendervector.space">privacy@rendervector.space</a> </p>
+    <h3 class="policy-subtitle">2. WHAT PERSONAL DATA DOES Studio Tycoon: Game Dev Empire COLLECT</h3>
+<h3 class="policy-subtitle">2.1. WE COLLECT THE DATA YOU GRANT US ACCESS.</h3>
+    <ul class="policy-list">
+      <li>Data we receive if you link a third party tool with the Service (such as Facebook or Google)</li>
+      <li>Contact information (such as name and email address)</li>
+      <li>Any information you submit to our customer service team in the Game or via email</li>
+    </ul>
+    <h3 class="policy-subtitle">2.2 WE ALSO HAVE SOME DATA WE COLLECT AUTOMATICALLY.</h3>
+    <ul class="policy-list">
+      <li>Data about your account, game progress and analytics about your use of our Services (e.g. in-game play progress, levels,
+      games played, session length).</li>
+      <li>Your IP address and device identifiers such as your Advertising ID, Device ID numbers (for more see here "Advertising
+      IDs and Device IDs")</li>
+      <li>Data about your device, such as device name and operating system, browser type and language</li>
+      <li>General location data</li>
+      <li>Precise geo-location data (GPS, with your consent)</li>
+    </ul>
+    <h3 class="policy-subtitle">2.3 WE ALSO HAVE SOME DATA WE OBTAIN FROM THIRD PARTY SOURCES.</h3>
+    <p>(2.3.1) Information from Facebook platform. You may choose to connect to our Services via your Facebook account. The
+    exact information we receive from you will depend on your social media privacy settings, but it will typically include
+    your basic public profile information, such as:</p>
+    <ul class="policy-list">
+      <li>Your username</li>
+      <li>Profile picture</li>
+      <li>Age range</li>
+      <li>Gender</li>
+      <li>Your friends playing the same Game</li>
+    </ul>
+    <p class="text">Typical uses include updating game progress on multiple devices you may own so that you can continue your progress using
+    multiple devices. In addition, we may show your Facebook friends in the Game and show your public Facebook profile name
+    and picture in Game leaderboards and in your Game profile.</p>
+    <p class="text">(2.3.2) Third party service providers. We may receive personal information about you from third-party sources. We may
+    get your personal information, for example, when you installed our Game or when, prior to installation, you click on an
+    advertisement for the Game.</p>
+    <p class="text">(2.3.3) Advertising partners. From time to time, we may also receive personal information about you from other
+    third-party sources. For example, if you clicked on an advertisement directing you to one of our Services (such as an ad
+    for one of our Games in another publishers’ game), we will be provided with information about which ad network and
+    advertising campaign the install originated from (See also "Advertising" below).</p>
+    <h3 class="policy-subtitle">3. WHY WE COLLECT YOUR DATA</h3>
+    <p>Analytics Providers provide Studio Tycoon: Game Dev Empire with ad tracking and help us collect, aggregate and prepare
+    certain information about how you use our services as well as how our services are performing.</p>
+    <h3 class="policy-subtitle">3.1 TO MAKE THE SERVICE WORK</h3>
+<ul class="policy-list">
+  <li>Create accounts and allow you to play our games and use our Service</li>
+  <li>Operate the Service</li>
+  <li>Verify and confirm payments</li>
+  <li>Provide and deliver products and services you request</li>
+  <li>To provide you with the correct versions of our games and/or applications (e.g. knowing which language to make our games
+  available to you in)</li>
+  <li>Send you Service-related communications</li>
+</ul>
+    <h3 class="policy-subtitle">3.2 TO MAKE THE SERVICE MORE SUITABLE FOR OUR PLAYERS</h3>
+    <p>To provide a great Service to our players, we have a legitimate interest to collect and process necessary data to</p>
+    <ul class="text policy-list">
+      <li>Update and develop player profiles</li>
+      <li>Develop and improve the Service and player experience</li>
+      <li>Manage our relationship with you</li>
+      <li>Provide social features as part of the Service</li>
+      <li>Customize your Service experience</li>
+      <li>Respond to your comments and questions and provide player support</li>
+      <li>Provide you Studio Tycoon: Game Dev Empire offers in the Service as well as in other websites and services, and by email</li>
+      <li>Send you related information, such as updates, security alerts, and support messages</li>
+      <li>Enable you to communicate with other players</li>
+      <li>To detect and prevent illegal activities (e.g. hacking or cheating)</li>
+      <li>To conduct research</li>
+      <li>To analyze, profile, and segment.</li>
+    </ul>
+    <p class="text">In all of the above cases and purposes, we may analyze, profile and segment all collected data.</p>
+    <h3 class="policy-subtitle">3.3 TO SHOW PERSONALIZED ADVERTISEMENTS.</h3>
+    <p>To show you personalized advertisements in the Service as well as in other websites and services (including email) we
+    have a legitimate interest to process necessary data to</p>
+<ul class="text policy-list">
+  <li>Track the content you access in connection with the Service and your online behavior</li>
+  <li>Deliver, target and improve our advertising and the Service</li>
+</ul>
+<h3 class="policy-subtitle">3.4 WITH YOUR CONSENT</h3>
+<p>With your consent, we may process your data for additional purposes, such as using your GPS location to show you local
+events.</p>
+<h3 class="policy-subtitle">4. WE ALSO SHARE DATA WITH KEY PARTNERS</h3>
+<h3 class="policy-subtitle">4.1 WHAT DATA WE MIGHT SHARE</h3>
+<ul class="policy-list">
+  <li>Data we receive if you link a third party tool with the Service (Facebook,)</li>
+  <li>Demographic data (such as to determine the coarse location of your IP address)</li>
+  <li>Data to fight fraud (such as refund abuse in games or click fraud in advertising)</li>
+  <li>Data from platforms that the games run on (such as to verify payment)</li>
+  <li>Data for advertising and analytics purposes, so we can provide you a better Service</li>
+</ul>
+<h3 class="policy-subtitle">4.2 WHO DO WE SHARE YOUR DATA WITH</h3>
+<p>* Other players in order to provide certain in-app features, such as leaderboards, if you log into the App using a
+third-party service, such as Facebook or Apple or Game Center.</p>
+<p class="text">* Advertising network companies in order to serve contextual advertisements (the data include your IP-address, Device ID
+and advertising ID).</p>
+<ul class="text policy-list underline">
+  <li><a href="https://unity.com/grow?refferer=www.ironsrc.com">Ironsource</a></li>
+  <li><a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0">Facebook Ads</a></li>
+  <li><a href="https://docs.chartboost.com/en/">Chartboost</a></li>
+  <li><a href="https://docs.unity.com/en-us/grow/offerwall#privacy-policy">Tapjoy</a></li>
+  <li><a href="https://www.digitalturbine.com/legal/privacy-policy">Adcolony</a></li>
+  <li><a href="https://www.applovin.com/en">AppLovin</a></li>
+  <li><a href="https://www.hyprmx.com/pp.html">HyprMX</a></li>
+  <li><a href="https://advertising.inmobi.com/privacy-policy">InMobi</a></li>
+  <li><a href="https://wallpapers.com/backgrounds">Mediabrix/Receptiv</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity Ads</a></li>
+  <li><a href="https://liftoff.ai/privacy-policy/">Vungle</a></li>
+</ul>
+<p class="text">* Third party companies that perform services on our behalf, including payment processing, order fulfillment, data
+analysis, marketing services, email campaigns, hosting services, and customer service. While providing the services for
+us, these companies may access your personal information, and are required to use it solely as directed by us for the
+purpose of our requested service.</p>
+<ul class="text policy-list underline">
+  <li><a href="https://www.microsoft.com/en-us/privacy/privacystatement">Playfab</a></li>
+  <li><a href="https://messagegears.com/swrve/">SWRVE</a></li>
+  <li><a href="https://www.appsflyer.com/legal/privacy-policy/"></a>Appsflyer</li>
+  <li><a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0">Facebook</a></li>
+</ul>
+<h3 class="policy-subtitle">5. HOW WE PROTECT YOUR DATA</h3>
+<p>5.1 Security In order to help ensure a secure and safe player experience, we are continuously working with our partners
+to offer the most advance measures to protect your data.</p>
+<p class="text">5.2 Data Retention We retain your data for as long as your account is active or as needed to provide you the Service.</p>
+<h3 class="policy-subtitle">6. COOKIES AND SIMILAR TECHNOLOGIES</h3>
+<p>We and our partners use cookies and similar technologies to provide and personalize the Service, analyse use, target
+advertisements and prevent fraud. You can disable cookies in your browser settings, but some parts of the Service may
+then not function properly.</p>
+<h3 class="policy-subtitle">7. AGE LIMITS</h3>
+<p>We do not knowingly collect or solicit personal data about or direct or target interest based advertising to anyone
+under the age of 13 or knowingly allow such persons to use our Services. If you are under 13, please do not send any
+data about yourself to us, including your name, address, telephone number, or email address. No one under the age of 13
+may provide any personal data. If we learn that we have collected personal data about a child under age 13, we will
+delete that data as quickly as possible. If you believe that we might have any data from or about a child under the age
+of 13, please contact us.</p>
+<h3 class="policy-subtitle">8. YOUR RIGHTS AND OPTIONS</h3>
+<p>8.1 Opt-out of marketing emails and other direct marketing.</p>
+<p class="text">You may opt-out of receiving promotional communications, such as marketing emails from us by following the instructions
+in such communications.</p>
+<p class="text">8.2 Opt-out of targeted advertising.</p>
+<p class="text">You can opt-out of interest-based advertising on mobile applications by checking the privacy settings of your Android or
+iOS device and selecting "limit ad tracking" (Apple iOS) or "opt-out of interest based ads" (Android). For more
+information, see also:</p>
+<ul class="policy-list text">
+  <li>Faccebook Privacy Policy: <a href="https://www.facebook.com/about/privacy">https://www.facebook.com/about/privacy</a> </li>
+    <li>Google Privacy Policy: <a
+        href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> </li>
+  <li>Twitter Privacy Policy: <a
+      href="https://twitter.com/en/privacy">https://twitter.com/en/privacy</a> </li>
+  <li>Unity Technologies Privacy Policy: <a
+      href="https://www.facebook.com/about/privacy">https://unity3d.com/legal/privacy-policy</a> </li>
+</ul>
+<p class="text">For personalized in-game offers opt-out, you can use the options provided in the game settings.</p>
+<p class="text">8.3 Access the personal data we hold about you.</p>
+<p class="text">If you request, we will provide you with a copy of your personal data in an electronic format.</p>
+<p class="text">8.4 Your other rights.</p>
+<p class="text">You can always withdraw your consent, for example, by turning off GPS location sharing in your mobile device settings.</p>
+<p class="text">Depending upon the applicable law where you live, you may have the right to make requests with respect to personal data
+that Website processes about you, for example, to request:</p>
+<ul class="policy-lis text">
+  <li>information</li>
+  <li>access</li>
+  <li>correction (or rectification) of personal data that you think is incorrect</li>
+  <li>Deletion</li>
+  <li>an electronic copy</li>
+  <li>You may also have the right to object to certain processing, including to opt out of targeted advertising. </li>
+</ul>
+<p class="text">To access your data in our games or to request its deletion, please use the in-game contact support feature provided in
+our games. You will find them in the game settings screen. Select the contact support button to launch an email with
+your game’s vital information. Please indicate your privacy policy request inside the support email. Alternatively, you
+can contact Website by sending an email to <a class="underline" href="mailto:privacy@rendervector.space">privacy@rendervector.space.</a> To fulfill requests submitted by email, we may need to confirm your identity to verify your right to make the request,
+which may involve requesting additional information from you. While we will usually not do so, we reserve the right to
+charge you an appropriate fee for the exercise of your rights where permitted by applicable laws and regulations.</p>
+  </div>
+</main>
+
+    <footer class="footer">
+    <div class="container footer-container">
+        <ul class="footer-navigation">
+            <li class="footer-link">
+                <a class="footer-underline" href="privacy.html">Privacy Policy</a>
+            </li>
+            <li class="footer-link">
+                <a class="footer-underline" href="terms.html">Terms and conditions</a>
+            </li>
+        </ul>
+        <p class="footer-text">© 2026 rendervector.space — All rights reserved</p>
+    </div>
+</footer>
+    </body>
+    
+    </html>
